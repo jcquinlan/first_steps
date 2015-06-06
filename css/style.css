@@ -1,0 +1,21 @@
+/* COLORS
+    
+*/
+
+a {
+     text-decoration: none; 
+}
+
+/** HOME PAGE **/
+/***************/
+.header {
+    background-color: black;
+}
+
+#primary li {
+    margin: none;
+    display: inline-block;
+    color: white;
+    list-style-type: none;
+    padding: 10px 20px;
+}
