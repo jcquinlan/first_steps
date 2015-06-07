@@ -100,8 +100,7 @@ a {
 }
 
 .content h4 {
-    font-weight: 400;
-    border-bottom: 3px solid #593F62;
+    font-weight: 400; 
 }
 
 .content p, .content li {
