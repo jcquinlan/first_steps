@@ -1,8 +1,12 @@
 /* COLORS
-dark purple: #593F62
-light purple: #746897
-pink: #DD7596
+* dark purple: #593F62
+* light purple: #746897
+* pink: #DD7596
 */
+
+/* Fonts
+* Quicksand
+* Handlee */
 
 a {
      text-decoration: none; 
@@ -43,7 +47,7 @@ a {
 }
 
 #primary li:hover {
-    background-color: blue;
+    background-color: #593F62;
 }
 
 
