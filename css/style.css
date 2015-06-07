@@ -41,6 +41,8 @@ a {
 }
 
 .header p {
+    text-align: right;
+    margin-top: 35px;
     font-size: 1em;
     color: white;   
 }
@@ -91,19 +93,36 @@ a {
     background-size: cover;
 }
 
-/** MISSION STATEMENT **/
-/***********************/
-#mission {
-    padding: 40px 0px;
-    color: #333;
+/** GENERAL CONTENT AREA **/
+/**************************/
+.content .row {
+     padding-top: 50px;   
 }
 
-#mission h4 {
+.content h4 {
     font-weight: 400;
     border-bottom: 3px solid #593F62;
 }
-#mission p {
+
+.content p, .content li {
     color: black;
-     font-weight: 400;   
+    font-weight: 400;   
 }
+
+/** MISSION STATEMENT **/
+/***********************/
+#mission {
+    color: #333;
+}
+
+/** INSURANCE **/
+/***************/
+#insurance img {
+    padding-top: 50px;
+    max-width: 100%;  
+}
+
+
+
+
 
