@@ -1,5 +1,7 @@
 /* COLORS
-    
+dark purple: #593F62
+light purple: #746897
+pink: #DD7596
 */
 
 a {
@@ -9,13 +11,39 @@ a {
 /** HOME PAGE **/
 /***************/
 .header {
-    background-color: black;
+    background-color: #593F62;
+}
+
+.header h1 {
+    color: white;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+#primary ul {
+    text-align: center;
+    margin: 0px;  
+    background-color: #746897;
 }
 
 #primary li {
-    margin: none;
+    margin: 0px;
     display: inline-block;
     color: white;
     list-style-type: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
+
+#primary a {
+     color: white;   
+}
+
+/** HERO IMAGE **/
+/****************/
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url(../imgs/firstStepsColors2.jpg);
+    background-size: cover;
+}
+
