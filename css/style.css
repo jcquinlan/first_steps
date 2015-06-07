@@ -11,7 +11,7 @@ a {
 /** HOME PAGE **/
 /***************/
 .header {
-    height: 50px;
+    width: 100%;
     background-color: #593F62;
 }
 
@@ -56,7 +56,7 @@ a {
 .hero {
     height: 400px;
     width: 100%;
-    background-image: url(../imgs/firstStepsColors2.jpg);
+    background-image: url(../imgs/woman.jpg);
     background-size: cover;
 }
 
