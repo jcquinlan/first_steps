@@ -6,11 +6,23 @@
 
 /* Fonts
 * Quicksand
-* Handlee */
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans:400,300,700);
+
+/** GENERAL **/
+/*************/
+body {
+    font-size: 22px; 
+    font-family: "Quicksand";
+    font-weight: 400;
+}
 
 a {
      text-decoration: none; 
 }
+
+
 
 /** HOME PAGE **/
 /***************/
@@ -20,14 +32,16 @@ a {
 }
 
 .header h1 {
+    font-family: "Quicksand";
+    font-weight: 700;
     font-size: 2.5em;
     color: white;
-    padding: 10px 0px;
+    padding: 20px 0px;
     margin: 0px;
 }
 
 .header p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;   
 }
 
@@ -37,19 +51,21 @@ a {
 }
 
 .subHeader p {
-    font-size: 1.5em;
-    padding: 10px 0px;
+    font-size: 1em;
+    margin: 0px;
+    padding: 5px 0px;
 }
 
 #primary ul {
     text-align: center;
     margin: 0px;  
     background-color: #746897;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid #593F62;
+    
 }
 
 #primary li {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0px;
     display: inline-block;
     color: white;
@@ -73,5 +89,21 @@ a {
     width: 100%;
     background-image: url(../imgs/woman.jpg);
     background-size: cover;
+}
+
+/** MISSION STATEMENT **/
+/***********************/
+#mission {
+    padding: 40px 0px;
+    color: #333;
+}
+
+#mission h4 {
+    font-weight: 400;
+    border-bottom: 3px solid #593F62;
+}
+#mission p {
+    color: black;
+     font-weight: 400;   
 }
 
