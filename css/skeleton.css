@@ -48,8 +48,9 @@
     padding: 0; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 800px */
+/* CHANGE THIS TO CHANGE BREAKPOINT */
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,

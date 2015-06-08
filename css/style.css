@@ -5,7 +5,7 @@
 */
 
 /* Fonts
-* Quicksand
+* Quicksand - Google Fonts
 */
 
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans:400,300,700);
@@ -50,6 +50,7 @@ a {
 .subHeader {
     color: white;
     background-color:  #746897; 
+    text-align: center;
 }
 
 .subHeader p {
@@ -63,16 +64,19 @@ a {
     margin: 0px;  
     background-color: #746897;
     border-bottom: 3px solid #593F62;
-    
 }
 
 #primary li {
     font-size: 1em;
     margin: 0px;
+    padding: 15px 20px;
     display: inline-block;
     color: white;
     list-style-type: none;
-    padding: 15px 20px;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 
 #primary li:hover {
@@ -81,7 +85,8 @@ a {
 
 
 #primary a {
-     color: white;   
+    color: white;  
+    cursor: pointer;
 }
 
 /** HERO IMAGE **/
@@ -100,13 +105,35 @@ a {
 }
 
 .content h4 {
-    font-weight: 400; 
+    font-size: 2em;
+    font-weight: 400;
+    /* border-bottom: 3px solid #593F62; */
 }
 
 .content p, .content li {
     color: black;
     font-weight: 400;   
 }
+
+button {
+    text-transform: none;
+    font-size: .7em;
+    position: relative;
+    left: 50%;
+    margin-left: -110px;
+    width: 220px;
+    background-color: #746897;
+    color: white;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: #593F62;
+}
+
 
 /** MISSION STATEMENT **/
 /***********************/
@@ -116,11 +143,77 @@ a {
 
 /** INSURANCE **/
 /***************/
-#insurance img {
-    padding-top: 50px;
+#insurance {
+    border-radius: 8px;
+    margin: 50px 0px; 
+    text-align: center;
+    padding: 20px;
+    padding-right: 0px;
+    border: 3px solid #593F62; 
+}
+
+#insurance h4 {
+    border: none;    
+}
+
+#insurance ul {
+    list-style-type: none;   
+}
+
+
+/** IMAGES **/
+/************/
+#images {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#images img {
     max-width: 100%;  
 }
 
+/** PHILOSOPHY **/
+/****************/
+
+/** FOOTER **/
+/************/
+.footer {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: #593F62;
+}
+
+.footer h4 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 2em;   
+}
+
+.footer p {
+    font-size: .8em;
+    margin: 15px 0px 0px 0px;
+}
+
+.footer svg {
+    padding: 0px 5px;
+    transform: translate(0px, 5px);
+}
+
+#footerInfo ul {
+    text-align: center;
+    margin: 0px;  
+    background-color: #593F62;
+}
+
+#footerInfo li {
+    font-size: 1em;
+    margin: 0px;
+    display: inline-block;
+    color: white;
+    list-style-type: none;
+    padding: 15px 20px;
+}
 
 
 
