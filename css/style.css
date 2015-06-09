@@ -66,6 +66,10 @@ a {
     border-bottom: 3px solid #593F62;
 }
 
+#primary.open ul {
+    transform:  perspective(600) rotate3d(0,0,0,0);
+}
+
 #primary li {
     font-size: 1em;
     margin: 0px;
