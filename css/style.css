@@ -1,224 +1,245 @@
-/* COLORS
-* dark purple: #593F62
-* light purple: #746897
-* pink: #DD7596
-*/
-
-/* Fonts
-* Quicksand - Google Fonts
-*/
-
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans:400,300,700);
 
+/** COLORS **/
+/* 
+* dark purple: #593F62
+* light purple: #746897
+*/
+
 /** GENERAL **/
-/*************/
 body {
-    font-size: 22px; 
+    font-size: 18px;
     font-family: "Quicksand";
-    font-weight: 400;
 }
-
 a {
-     text-decoration: none; 
+    color: black;
+    margin: 0px;
+}
+p {
+    font-size: 24px;
+    color: white;
+    padding: 10px 0px;
+    margin: 0px;
 }
 
-
-
-/** HOME PAGE **/
-/***************/
-.header {
-    width: 100%;
-    background-color: #593F62;
+/*Bootstrap Override Garbage*/
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
 
-.header h1 {
-    font-family: "Quicksand";
+.button {
     font-weight: 700;
-    font-size: 2.5em;
-    color: white;
-    padding: 20px 0px;
-    margin: 0px;
-}
-
-.header p {
-    text-align: right;
-    margin-top: 35px;
-    font-size: 1em;
-    color: white;   
-}
-
-.subHeader {
-    color: white;
-    background-color:  #746897; 
     text-align: center;
-}
-
-.subHeader p {
-    font-size: 1em;
-    margin: 0px;
-    padding: 5px 0px;
-}
-
-#primary ul {
-    text-align: center;
-    margin: 0px;  
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
     background-color: #746897;
-    border-bottom: 3px solid #593F62;
-}
-
-#primary.open ul {
-    transform:  perspective(600) rotate3d(0,0,0,0);
-}
-
-#primary li {
-    font-size: 1em;
-    margin: 0px;
-    padding: 15px 20px;
-    display: inline-block;
+    border: 1px solid #746897;
+    border-radius: 3px;
     color: white;
-    list-style-type: none;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     cursor: pointer;
 }
+.button:hover {
+    background-color: white;
+    color: #746897;
+}
 
-#primary li:hover {
+/** TYPOGRAPHY **/
+
+
+/** HEADER **/
+/************/
+.header {
     background-color: #593F62;
+    color: white;
+}
+.subHeader {
+    font-size: 1.2em;
+    background-color: #746897;
+    text-align: center;
+}
+#title {
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 3em;
+}
+#subTitle {
+    font-size: 1.25em;
+    margin-top: 40px;
+    font-weight: 300;
+    text-align: right;   
 }
 
-
-#primary a {
-    color: white;  
-    cursor: pointer;
+@media(max-width: 991px){
+    #title {
+        margin: 0px;
+        padding: 10px 0px;
+        font-size: 2.5em;
+    }
 }
 
-/** HERO IMAGE **/
-/****************/
+@media(max-width: 767px){
+    .header {
+        text-align: center;    
+    }
+    #subTitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/** HERO **/
+/**********/
 .hero {
     height: 400px;
-    width: 100%;
     background-image: url(../imgs/woman.jpg);
     background-size: cover;
 }
 
-/** GENERAL CONTENT AREA **/
-/**************************/
-.content .row {
-     padding-top: 50px;   
-}
-
-.content h4 {
-    font-size: 2em;
-    font-weight: 400;
-    /* border-bottom: 3px solid #593F62; */
-}
-
-.content p, .content li {
-    color: black;
-    font-weight: 400;   
-}
-
-button {
-    text-transform: none;
-    font-size: .7em;
-    position: relative;
-    left: 50%;
-    margin-left: -110px;
-    width: 220px;
+/** NAV **/
+/*********/
+.navbar {
+    font-size: 1.2em;
     background-color: #746897;
-    color: white;
-    transition: all .4s ease-in-out;
+    border-bottom: 3px solid #593F62;
+}
+ .navbar li {
+     padding: 0px 10px;
+     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
 }
-
-button:hover {
-    background-color: white;
-    color: #593F62;
+ .navbar li:hover {
+    background-color: #593F62;   
+}
+.navbar a {
+    padding: 0px;
+    background-color: none;
+    color: white;   
+}
+.navbar-nav > li > a:hover {
+     background-color: transparent;   
+}
+.navbar-collapse {
+     text-align: center;   
 }
 
-
-/** MISSION STATEMENT **/
-/***********************/
-#mission {
-    color: #333;
+/* These two center the nav */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
-/** INSURANCE **/
-/***************/
+@media(max-width:1100px){
+    .navbar li {
+        padding: 0px;    
+    }
+}
+
+@media(max-width: 1000px){
+    .navbar li {
+        font-size: 1em;    
+    }
+}
+
+/** CONTENT **/
+/*************/
+.content {
+     margin-top: 80px;   
+}
+.content p {
+    line-height: 1.5em;
+    padding-left: 40px;
+    color: #000;
+}
+.content h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #333; 
+    margin: 0px;
+}
+
+@media(max-width:767px){
+    .content h3 {
+        padding-left: 40px;    
+    }
+}
+
+/** Insurance **/
 #insurance {
-    border-radius: 8px;
-    margin: 50px 0px; 
+    margin-top: 80px;
     text-align: center;
-    padding: 20px;
-    padding-right: 0px;
-    border: 3px solid #593F62; 
+    border: 3px solid #593F62;
+    border-radius: 10px;
 }
-
-#insurance h4 {
-    border: none;    
+#insurance h3 {
+    padding: 10px 0px;   
 }
-
 #insurance ul {
+    padding-bottom: 20px;
+}
+#insurance li {
+    font-size: 1.5em;
+    padding: 5px 0px;
     list-style-type: none;   
 }
-
-
-/** IMAGES **/
-/************/
-#images {
-    padding-top: 80px;
-    padding-bottom: 40px;
+#homeImages {
+    margin-top: 80px;
+}
+#homeImages img {
+     max-width: 100%;   
 }
 
-#images img {
-    max-width: 100%;  
+@media(max-width: 767px){
+     #insurance {
+         border: none;    
+     }
 }
 
-/** PHILOSOPHY **/
-/****************/
+/** Philosophy **/
+#philosophy {
+     margin-top: 80px;   
+}
+#philosophy .button {
+     margin: 20px auto;    
+}
 
 /** FOOTER **/
 /************/
 .footer {
-    margin: 0px;
-    padding: 0px;
-    color: white;
+    margin-top: 80px;
     background-color: #593F62;
+    color: white;
 }
-
-.footer h4 {
-    margin: 0px;
-    font-weight: 700;
-    font-size: 2em;   
-}
-
 .footer p {
-    font-size: .8em;
-    margin: 15px 0px 0px 0px;
+    text-align: right;
+    font-weight: 300;   
 }
-
-.footer svg {
-    padding: 0px 5px;
-    transform: translate(0px, 5px);
-}
-
-#footerInfo ul {
-    text-align: center;
-    margin: 0px;  
-    background-color: #593F62;
-}
-
-#footerInfo li {
-    font-size: 1em;
+.footer h3 {
+    font-size: 2em; 
     margin: 0px;
-    display: inline-block;
-    color: white;
-    list-style-type: none;
-    padding: 15px 20px;
 }
 
-
-
+@media(max-width: 991px){
+    .footer {
+        text-align: center;
+    }
+    
+    .footer p {
+        text-align: center;   
+    }
+}
 
