@@ -217,12 +217,6 @@ ul, menu, dir {
      margin: 20px auto;    
 }
 
-/** TREATMENT **/
-/***************/
-#intervention img, #specialize img {
-     max-width: 100%;   
-}
-
 /** FOOTER **/
 /************/
 .footer {
