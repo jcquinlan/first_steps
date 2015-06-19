@@ -267,6 +267,9 @@ ul, menu, dir {
     text-align: center;
     font-size: 1.5em;
 }
+#benefit {
+    margin-top: 80px;
+}
 
 /** FOOTER **/
 /************/
