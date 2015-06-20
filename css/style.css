@@ -307,6 +307,12 @@ ul, menu, dir {
     margin-top: 100px;
 }
 
+@media(max-width: 991px){
+    #specialize img {
+        margin-top: 30px;
+    }    
+}
+
 /** FOOTER **/
 /************/
 .footer {
@@ -326,6 +332,7 @@ ul, menu, dir {
 @media(max-width: 991px){
     .footer {
         text-align: center;
+        margin-top: 20px;
     }
     
     .footer p {
@@ -344,12 +351,18 @@ ul, menu, dir {
         font-size: 1.7em;    
     }
     .content p {
-        padding: 10px;    
+        padding: 20px;    
     }
     .content ul {
         list-style-type: circle;
         text-align: center;
         font-size: .7em;
+    }
+    #reasons ul {
+        list-style-type: circle;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 0px 50px;
     }
 }
 
