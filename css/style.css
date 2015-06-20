@@ -127,9 +127,19 @@ ul, menu, dir {
 /** HERO **/
 /**********/
 .hero {
-    height: 400px;
-    background-image: url(../imgs/woman.jpg);
+    height: 500px;
+    background-image: url(../imgs/ethan2JPEG.jpg);
     background-size: cover;
+}
+
+@media(min-width: 1200px){
+    .hero {
+        background-image: url(../imgs/tunnel1.jpg);    
+    }
+}
+
+@media(max-width: 768px){
+
 }
 
 /** NAV **/
