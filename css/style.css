@@ -10,6 +10,7 @@
 body {
     font-size: 18px;
     font-family: "Quicksand";
+    background-color: #fcfbff;
 }
 a {
     color: black;
@@ -38,6 +39,8 @@ ul, menu, dir {
 }
 
 .button {
+    display: inline-block;
+    margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -69,16 +72,17 @@ ul, menu, dir {
     text-align: center;
 }
 #title {
+    text-align: left;
     margin: 0px;
     padding: 10px 0px;
-    font-size: 3em;
+    font-size: 1.8em;
 }
 #title img {
-    width: 100px;
+    width: 70px;
     padding-right: 10px;
 }
 #subTitle {
-    font-size: 1.25em;
+    font-size: 1.4em;
     margin-top: 40px;
     font-weight: 300;
     text-align: right;   
@@ -88,7 +92,16 @@ ul, menu, dir {
     #title {
         margin: 0px;
         padding: 10px 0px;
-        font-size: 2.5em;
+        font-size: 1.3em;
+    }
+    #subTitle {
+        font-size:.9em;    
+    }
+}
+
+@media(max-width: 1500px){
+    #subTitle {
+        font-size: 1em;    
     }
 }
 
@@ -96,9 +109,18 @@ ul, menu, dir {
     .header {
         text-align: center;    
     }
+    #title {
+        text-align: center;    
+    }
     #subTitle {
         text-align: center;
         margin-top: 10px;
+    }
+}
+
+@media(max-width:500px){
+    .header img {
+        display: none;    
     }
 }
 
@@ -150,13 +172,15 @@ ul, menu, dir {
 
 @media(max-width:1100px){
     .navbar li {
+        font-size: .8em;
         padding: 0px;    
     }
 }
 
 @media(max-width: 1000px){
     .navbar li {
-        font-size: 1em;    
+        font-size: .8em;
+        padding: 0px;
     }
 }
 
@@ -179,7 +203,7 @@ ul, menu, dir {
 
 @media(max-width:767px){
     .content h3 {
-        padding-left: 40px;    
+        padding-left: 0px;    
     }
 }
 
@@ -225,7 +249,7 @@ ul, menu, dir {
 /** TREATMENT **/
 /***************/
 #specialize {
-    margin-top: 80px;    
+    margin-top: 100px;    
 }
 #specialize h3 {
     margin-bottom: 10px;    
@@ -239,10 +263,11 @@ ul, menu, dir {
     padding: 0px 30px;    
 }
 #strategies {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 #strategies h3 {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 #strategies img {
     margin-top: 30px;
@@ -250,14 +275,15 @@ ul, menu, dir {
 }
 #strategies ul {
     font-size: 1.2em;
-    padding: 0px 30px;    
+    padding: 0px 30px;
+    margin-left: 20px;
 }
 #cranio {
- margin-top: 80px;   
+ margin-top: 100px;   
 }
 #reasons {
     text-align: center;
-    margin-top: 80px;    
+    margin-top: 100px;    
 }
 #reasons h3 {
     margin-bottom: 30px;    
@@ -268,7 +294,7 @@ ul, menu, dir {
     font-size: 1.5em;
 }
 #benefit {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 /** FOOTER **/
@@ -294,6 +320,26 @@ ul, menu, dir {
     
     .footer p {
         text-align: center;   
+    }
+}
+
+/** GENERAL MEDIA QUERIES **/
+/***************************/
+@media(max-width: 768px){
+     p {
+         font-size: 18px;    
+     }
+    .content h3 {
+        text-align: center;
+        font-size: 1.7em;    
+    }
+    .content p {
+        padding: 10px;    
+    }
+    .content ul {
+        list-style-type: circle;
+        text-align: center;
+        font-size: .7em;
     }
 }
 
