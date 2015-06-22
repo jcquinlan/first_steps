@@ -39,8 +39,13 @@ ul, menu, dir {
 }
 
 .button {
-    display: inline-block;
-    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 350px;
+    position: relative;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 30px;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -82,7 +87,7 @@ ul, menu, dir {
     padding-right: 10px;
 }
 #subTitle {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-top: 40px;
     font-weight: 300;
     text-align: right;   
@@ -91,11 +96,21 @@ ul, menu, dir {
 @media(max-width: 991px){
     #title {
         margin: 0px;
+        margin-top: 20px;
         padding: 10px 0px;
         font-size: 1.3em;
     }
+    #title img {
+        width: 50px;    
+    }
     #subTitle {
-        font-size:.9em;    
+        font-size:.9em;
+    }
+}
+
+@media (max-width: 00px){
+    #subTitle {
+        font-size: 1em;    
     }
 }
 
@@ -147,6 +162,7 @@ ul, menu, dir {
 .navbar {
     font-size: 1.2em;
     background-color: #746897;
+    border: none;
     border-bottom: 3px solid #593F62;
 }
  .navbar li {
@@ -270,7 +286,7 @@ ul, menu, dir {
 }
 #specialize ul {
     font-size: 1.2em;
-    padding: 0px 30px;    
+    padding: 0px 20px;    
 }
 #strategies {
     margin-top: 30px;
@@ -285,7 +301,7 @@ ul, menu, dir {
 }
 #strategies ul {
     font-size: 1.2em;
-    padding: 0px 30px;
+    padding: 0px 20px;
     margin-left: 20px;
 }
 #cranio {
@@ -321,12 +337,19 @@ ul, menu, dir {
     color: white;
 }
 .footer p {
+    font-size: 1.1em;
     text-align: right;
-    font-weight: 300;   
+    font-weight: 300;
+    margin-top: 10px
 }
 .footer h3 {
-    font-size: 2em; 
+    font-size: 1.4em;
     margin: 0px;
+    margin-top: 12px;
+}
+.footer img {
+    width: 40px;
+    margin-right: 10px;
 }
 
 @media(max-width: 991px){
@@ -353,16 +376,19 @@ ul, menu, dir {
     .content p {
         padding: 20px;    
     }
-    .content ul {
+    .content li {
         list-style-type: circle;
         text-align: center;
-        font-size: .7em;
+        font-size: .9em;
     }
     #reasons ul {
         list-style-type: circle;
         text-align: center;
         font-size: 1.2em;
         padding: 0px 50px;
+    }
+    #specialize ul {
+        margin-left: 20px;    
     }
 }
 
