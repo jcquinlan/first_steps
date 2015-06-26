@@ -140,21 +140,21 @@ ul, menu, dir {
 /**********/
 .hero {
     height: 500px;
-    background-image: url(../imgs/ethan2JPEG.jpg);
+    background-image: url(../imgs/child-therapy-doylestown.jpg);
     background-size: cover;
 }
 
 @media(min-width: 1200px){
     .hero {
-        background-image: url(../imgs/tunnel1.jpg);    
+        background-image: url(../imgs/child-therapy-doylestown-wide.jpg);    
     }
 }
 
 @media(max-width: 768px){
     .hero {
         background-size: cover;
-        height: 200px;
-        background-image: url(../imgs/tunnel1.jpg);
+        height: 300px;
+        background-image: url(../imgs/child-therapy-doylestown.jpg);
     }
 }
 
@@ -291,6 +291,7 @@ ul, menu, dir {
 }
 #strategies {
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 #strategies h3 {
     margin-top: 20px;
@@ -309,8 +310,15 @@ ul, menu, dir {
 
 @media(max-width: 991px){
     #specialize img {
-        margin-top: 30px;
-    }    
+        margin-top: 50px;
+    }
+    #strategies {
+        text-align: center;
+    }
+    #specialize {
+        text-align: center;
+        list-style: none;
+    }
 }
 
 /** CRANIO **/
@@ -336,6 +344,9 @@ ul, menu, dir {
 
 /** EXPERIENCE **/
 /****************/
+#manno img {
+    max-width: 100%;    
+}
 .testimonials {
     border: 2px solid #593F62;
     margin-top: 80px;
@@ -359,6 +370,18 @@ ul, menu, dir {
     }
 }
 
+@media(max-width: 991px){
+    #manno p {
+        margin-top: 30px;    
+    }
+}
+
+@media(max-width: 767px){
+    #testimonial {
+        margin: 10px 0px;    
+    }    
+}
+
 /** CONTACT **/
 /*************/
 #message {
@@ -372,7 +395,7 @@ ul, menu, dir {
     max-width: 100%;    
 }
 #contact {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #contact p {
     font-size: 1.2em;    
@@ -446,23 +469,64 @@ ul, menu, dir {
         font-size: 1.7em;    
     }
     .content p {
-        padding: 20px;    
+        padding: 10px;    
     }
     .content li {
-        list-style-type: circle;
+        border-bottom: 1px solid #593F62;
         text-align: center;
-        font-size: .9em;
+        font-size: .8em;
     }
-    #reasons ul {
+    #specialize {
+        padding: none;    
+    }
+    #specialize li {
+        border-bottom: 1px solid #593F62;
+        list-style-type: none;
+        line-height: 30px;
+    }
+    #strategies {
+        padding: 0px;
+    }
+    #strategies ul {
+        margin: 0px;    
+    }
+    #strategies li {
+        list-style-type: none; 
+        line-height: 30px;
+    }
+    #insurance {
+        margin-top: 30px;    
+    }
+    #insurance ul {
+        font-size: .7em;
+        padding: 0px 50px;
+    }
+    #insurance li {
+        text-align: center;
+        border-bottom: 1px solid #593F62;
+    }
+    #homeImages {
+        margin-top: 50px;    
+    }
+     #reasons ul {
         font-size: 1.2em;
         padding: 0px 50px;
     }
-    #reasons li {
+     #reasons li {
         text-align: center;
-        list-style-type: circle;    
+        border-bottom: 1px solid #593F62;
+         line-height: 30px;
     }
-    #specialize ul {
-        margin-left: 20px;    
+    #contact {
+        margin-top: 10px;    
+    }
+    .button {
+        width: 250px;
+        position: relative;
+        left: 50%;
+        margin-left: -120px;
+        margin-top: 50px;
+        padding: 10px;
     }
 }
 
