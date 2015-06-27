@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans:400,300,700);
 
 /** COLORS **/
-/* 
+/*
 * dark purple: #593F62
 * light purple: #746897
 */
@@ -17,7 +17,7 @@ a {
     margin: 0px;
 }
 a:hover {
-    color:#593F62;     
+    color:#593F62;
 }
 p {
     font-size: 24px;
@@ -54,7 +54,7 @@ ul, menu, dir {
     text-decoration: none;
     color: white;
     border: 2px solid #593F62;
-    background-color: #593F62; 
+    background-color: #593F62;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -64,9 +64,6 @@ ul, menu, dir {
     color: #593F62;
     background-color: white;
 }
-
-/** TYPOGRAPHY **/
-
 
 /** HEADER **/
 /************/
@@ -93,7 +90,7 @@ ul, menu, dir {
     font-size: 1.3em;
     margin-top: 30px;
     font-weight: 300;
-    text-align: right;   
+    text-align: right;
 }
 
 @media(max-width: 991px){
@@ -104,7 +101,7 @@ ul, menu, dir {
         font-size: 1.3em;
     }
     #title img {
-        width: 50px;    
+        width: 50px;
     }
     #subTitle {
         font-size:.9em;
@@ -113,16 +110,17 @@ ul, menu, dir {
 
 @media(max-width: 1500px){
     #subTitle {
-        font-size: 1em;    
+        font-size: 1em;
     }
 }
 
 @media(max-width: 767px){
     .header {
-        text-align: center;    
+        text-align: center;
     }
     #title {
-        text-align: center;    
+        font-size: 1.5em;
+        text-align: center;
     }
     #subTitle {
         text-align: center;
@@ -132,9 +130,16 @@ ul, menu, dir {
 
 @media(max-width:500px){
     .header img {
-        display: none;    
+        display: none;
+    }
+    #title {
+      font-size: 1.3em;
+    }
+    #subTitle {
+      font-size: .8em;
     }
 }
+
 
 /** HERO **/
 /**********/
@@ -146,7 +151,7 @@ ul, menu, dir {
 
 @media(min-width: 1200px){
     .hero {
-        background-image: url(../imgs/child-therapy-doylestown-wide.jpg);    
+        background-image: url(../imgs/child-therapy-doylestown-wide.jpg);
     }
 }
 
@@ -173,18 +178,18 @@ ul, menu, dir {
     -webkit-transition: all .4s ease-in-out;
 }
  .navbar li:hover {
-    background-color: #593F62;   
+    background-color: #593F62;
 }
 .navbar a {
     padding: 0px;
     background-color: none;
-    color: white;   
+    color: white;
 }
 .navbar-nav > li > a:hover {
-     background-color: transparent;   
+     background-color: transparent;
 }
 .navbar-collapse {
-     text-align: center;   
+     text-align: center;
 }
 
 /* These two center the nav */
@@ -200,7 +205,7 @@ ul, menu, dir {
 @media(max-width:1100px){
     .navbar li {
         font-size: .8em;
-        padding: 0px;    
+        padding: 0px;
     }
 }
 
@@ -214,7 +219,7 @@ ul, menu, dir {
 /** CONTENT **/
 /*************/
 .content {
-     margin-top: 80px;   
+     margin-top: 80px;
 }
 .content p {
     line-height: 1.5em;
@@ -224,13 +229,13 @@ ul, menu, dir {
 .content h3 {
     font-size: 2.5em;
     font-weight: 400;
-    color: #333; 
+    color: #333;
     margin: 0px;
 }
 
 @media(max-width:767px){
     .content h3 {
-        padding-left: 0px;    
+        padding-left: 0px;
     }
 }
 
@@ -242,7 +247,7 @@ ul, menu, dir {
     border-radius: 10px;
 }
 #insurance h3 {
-    padding: 10px 0px;   
+    padding: 10px 0px;
 }
 #insurance ul {
     padding-bottom: 20px;
@@ -250,36 +255,36 @@ ul, menu, dir {
 #insurance li {
     font-size: 1.5em;
     padding: 5px 0px;
-    list-style-type: none;   
+    list-style-type: none;
 }
 #homeImages {
     margin-top: 120px;
 }
 #homeImages img {
-     max-width: 100%;   
+     max-width: 100%;
 }
 
 @media(max-width: 767px){
      #insurance {
-         border: none;    
+         border: none;
      }
 }
 
 /** Philosophy **/
 #philosophy {
-     margin-top: 80px;   
+     margin-top: 80px;
 }
 #philosophy .button {
-     margin: 20px auto;    
+     margin: 20px auto;
 }
 
 /** TREATMENT **/
 /***************/
 #specialize {
-    margin-top: 40px;    
+    margin-top: 40px;
 }
 #specialize h3 {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 #specialize img {
     width: 100%;
@@ -287,7 +292,7 @@ ul, menu, dir {
 }
 #specialize ul {
     font-size: 1.2em;
-    padding: 0px 20px;    
+    padding: 0px 20px;
 }
 #strategies {
     margin-bottom: 50px;
@@ -300,7 +305,7 @@ ul, menu, dir {
 }
 #strategies img {
     margin-top: 30px;
-    width: 100%;    
+    width: 100%;
 }
 #strategies ul {
     font-size: 1.2em;
@@ -324,14 +329,15 @@ ul, menu, dir {
 /** CRANIO **/
 /************/
 #cranio {
- margin-top: 20px;   
+    margin-top: 20px;
+    padding: 0px 20px;
 }
 #reasons {
     text-align: center;
-    margin-top: 110px;    
+    margin-top: 110px;
 }
 #reasons h3 {
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
 }
 #reasons ul {
     list-style-type: none;
@@ -340,12 +346,13 @@ ul, menu, dir {
 }
 #benefit {
     margin-top: 110px;
+    padding: 0px 20px;
 }
 
 /** EXPERIENCE **/
 /****************/
 #manno img {
-    max-width: 100%;    
+    max-width: 100%;
 }
 .testimonials {
     border: 2px solid #593F62;
@@ -353,11 +360,11 @@ ul, menu, dir {
     border-radius: 5px;
 }
 .testimonials h3 {
-    text-align: center; 
+    text-align: center;
     padding-top: 40px;
 }
 #testimonial {
-    margin: 30px 0px;    
+    margin: 30px 0px;
 }
 .big {
     font-weight: 700;
@@ -366,20 +373,18 @@ ul, menu, dir {
 
 @media(max-width:767px){
     .testimonials {
-        border: none;    
+        border: none;
     }
 }
-
 @media(max-width: 991px){
     #manno p {
-        margin-top: 30px;    
+        margin-top: 30px;
     }
 }
-
 @media(max-width: 767px){
     #testimonial {
-        margin: 10px 0px;    
-    }    
+        margin: 10px 0px;
+    }
 }
 
 /** CONTACT **/
@@ -392,13 +397,13 @@ ul, menu, dir {
     text-align: center;
 }
 #map img {
-    max-width: 100%;    
+    max-width: 100%;
 }
 #contact {
     margin-top: 40px;
 }
 #contact p {
-    font-size: 1.2em;    
+    font-size: 1.2em;
 }
 #contact img {
     width: 30px;
@@ -408,7 +413,7 @@ ul, menu, dir {
 
 @media(max-width: 600px){
     #contact p {
-        font-size: .9em;    
+        font-size: .9em;
     }
 }
 
@@ -443,9 +448,9 @@ ul, menu, dir {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .footer p {
-        text-align: center;   
+        text-align: center;
     }
 }
 @media(max-width: 767px){
@@ -455,21 +460,31 @@ ul, menu, dir {
     }
 }
 
+@media(max-width:500px){
+    .footer h3 {
+        font-size: 1.3em;
+    }
+    .footer p {
+        font-size: .8em;
+    }
+}
+
+
 /** GENERAL MEDIA QUERIES **/
 /***************************/
 @media(max-width: 768px){
      p {
-         font-size: 18px;    
+         font-size: 18px;
      }
     .content {
-        margin-top: 10px;   
+        margin-top: 10px;
     }
     .content h3 {
         text-align: center;
-        font-size: 1.7em;    
+        font-size: 1.7em;
     }
     .content p {
-        padding: 10px;    
+        padding: 10px;
     }
     .content li {
         border-bottom: 1px solid #593F62;
@@ -477,7 +492,7 @@ ul, menu, dir {
         font-size: .8em;
     }
     #specialize {
-        padding: none;    
+        padding: none;
     }
     #specialize li {
         border-bottom: 1px solid #593F62;
@@ -487,15 +502,19 @@ ul, menu, dir {
     #strategies {
         padding: 0px;
     }
+    #strategies h3 {
+        margin: 20px 0px;
+        padding: 0px;
+    }
     #strategies ul {
-        margin: 0px;    
+        margin: 0px;
     }
     #strategies li {
-        list-style-type: none; 
+        list-style-type: none;
         line-height: 30px;
     }
     #insurance {
-        margin-top: 30px;    
+        margin-top: 30px;
     }
     #insurance ul {
         font-size: .7em;
@@ -506,7 +525,7 @@ ul, menu, dir {
         border-bottom: 1px solid #593F62;
     }
     #homeImages {
-        margin-top: 50px;    
+        margin-top: 50px;
     }
      #reasons ul {
         font-size: 1.2em;
@@ -518,7 +537,7 @@ ul, menu, dir {
          line-height: 30px;
     }
     #contact {
-        margin-top: 10px;    
+        margin-top: 10px;
     }
     .button {
         width: 250px;
@@ -529,4 +548,3 @@ ul, menu, dir {
         padding: 10px;
     }
 }
-
