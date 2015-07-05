@@ -71,6 +71,13 @@ ul, menu, dir {
     background-color: #593F62;
     color: white;
 }
+.header a {
+    color: white;
+}
+.header a:hover {
+    color: white;
+    text-decoration: none;
+}
 .subHeader {
     font-size: 1.2em;
     background-color: #746897;
@@ -87,7 +94,7 @@ ul, menu, dir {
     padding-right: 10px;
 }
 #subTitle {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: 30px;
     font-weight: 300;
     text-align: right;
@@ -104,13 +111,13 @@ ul, menu, dir {
         width: 50px;
     }
     #subTitle {
-        font-size:.9em;
+        font-size:.8em;
     }
 }
 
 @media(max-width: 1500px){
     #subTitle {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -119,7 +126,7 @@ ul, menu, dir {
         text-align: center;
     }
     #title {
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-align: center;
     }
     #subTitle {
@@ -453,7 +460,7 @@ ul, menu, dir {
         text-align: center;
     }
 }
-@media(max-width: 767px){
+@media(max-width: 1200px){
     .footer p {
         margin: 0px;
         padding: 5px;
