@@ -344,6 +344,12 @@ ul, menu, dir {
     margin-top: 20px;
     padding: 0px 20px;
 }
+#cranioPic {
+    margin: 50px 0px;
+}
+#cranioPic img {
+    max-width: 100%;
+}
 #reasons {
     text-align: center;
     margin-top: 110px;
