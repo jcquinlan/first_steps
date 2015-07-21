@@ -94,11 +94,7 @@ ul, menu, dir {
     padding-right: 10px;
 }
 #subTitle {
-<<<<<<< HEAD
-    font-size: 1.2em;
-=======
     font-size: 1.3em;
->>>>>>> 0f46aab8ef208967d6c6d7b45620151f5d9e8559
     margin-top: 30px;
     font-weight: 300;
     text-align: right;
@@ -129,10 +125,6 @@ ul, menu, dir {
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0f46aab8ef208967d6c6d7b45620151f5d9e8559
 
 @media(max-width: 767px){
     .header {
