@@ -94,17 +94,30 @@ ul, menu, dir {
     padding-right: 10px;
 }
 #subTitle {
+<<<<<<< HEAD
     font-size: 1.2em;
+=======
+    font-size: 1.3em;
+>>>>>>> 0f46aab8ef208967d6c6d7b45620151f5d9e8559
     margin-top: 30px;
     font-weight: 300;
     text-align: right;
 }
 
+
+
+@media(max-width: 1500px){
+    #subTitle {
+        font-size: 1.2em;
+    }
+}
+
+
 @media(max-width: 991px){
     #title {
         margin: 0px;
         margin-top: 20px;
-        padding: 10px 0px;
+        padding: 0px 0px;
         font-size: 1.3em;
     }
     #title img {
@@ -116,7 +129,10 @@ ul, menu, dir {
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f46aab8ef208967d6c6d7b45620151f5d9e8559
 
 @media(max-width: 767px){
     .header {
@@ -148,7 +164,7 @@ ul, menu, dir {
 /** HERO **/
 /**********/
 .hero {
-    height: 500px;
+    height: 550px;
     background-image: url(../imgs/child-therapy-doylestown.jpg);
     background-size: cover;
 }
@@ -162,7 +178,7 @@ ul, menu, dir {
 @media(max-width: 768px){
     .hero {
         background-size: cover;
-        height: 300px;
+        height: 350px;
         background-image: url(../imgs/child-therapy-doylestown.jpg);
     }
 }
@@ -336,6 +352,12 @@ ul, menu, dir {
     margin-top: 20px;
     padding: 0px 20px;
 }
+#cranioPic {
+    margin: 50px 0px;
+}
+#cranioPic img {
+    max-width: 100%;
+}
 #reasons {
     text-align: center;
     margin-top: 110px;
@@ -451,7 +473,16 @@ ul, menu, dir {
     width: 40px;
     margin-right: 10px;
 }
-
+@media(max-width: 1200px){
+    .footer p {
+        margin: 0px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .footer .col-md-12 p {
+        margin-top: 0px;
+    }
+}
 @media(max-width: 991px){
     .footer {
         text-align: center;
@@ -460,15 +491,15 @@ ul, menu, dir {
 
     .footer p {
         text-align: center;
-    }
-}
-@media(max-width: 1200px){
-    .footer p {
-        margin: 0px;
-        padding: 5px;
+        margin-top: 0px;
     }
 }
 
+@media(max-width:767px){
+    .footer p {
+        margin: 0px;
+    }
+}
 @media(max-width:500px){
     .footer h3 {
         font-size: 1.3em;
